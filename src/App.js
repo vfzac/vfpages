@@ -8,7 +8,7 @@ import Layout from './pages/Layout';
 
 const App = () => {
   return (
-    <BrowserRouter basename="/vfpages">
+    <BrowserRouter basename="/vfpages/">
       <Routes > 
         <Route  path="/" element={<Layout />}>
             <Route index element={<Home />} />
