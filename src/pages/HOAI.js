@@ -1,5 +1,23 @@
+// HOAI.js
+
+import React, { useState } from 'react';
+
 const HOAI = () => {
-    return <h1>404</h1>;
+  // Define state variables using useState hook
+  const [count, setCount] = useState(0);
+
+  // Event handler to increment count
+  const incrementCount = () => {
+    setCount(count + 1);
   };
-  
-  export default HOAI;
+
+  return (
+    <div>
+      <h2>useState Example</h2>
+      <p>Count: {count}</p>
+      <button onClick={incrementCount}>Increment</button>
+    </div>
+  );
+};
+
+export default HOAI;

@@ -8,9 +8,9 @@ import Layout from './pages/Layout';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes> 
-        <Route path="/" element={<Layout />}>
+    <BrowserRouter basename="/vfpages">
+      <Routes > 
+        <Route  path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="/HOAI" element={<HOAI />} />
             <Route path="*" element={<HOAI />} />
