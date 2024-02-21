@@ -1,14 +1,14 @@
 // App.js
 
 import React from 'react';
-import { BrowserRouter , Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HOAI from './pages/HOAI';
 import Home from './pages/Home';
 import Layout from './pages/Layout';
 
 const App = () => {
   return (
-    <BrowserRouter basename="/vfpages/">
+    <Router basename="/vfpages">
       <Routes > 
         <Route  path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -16,7 +16,7 @@ const App = () => {
             <Route path="*" element={<HOAI />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };
 // 
