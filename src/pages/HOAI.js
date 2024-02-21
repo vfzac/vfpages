@@ -1,23 +1,44 @@
-// HOAI.js
+import React, { useState, useEffect } from 'react';
 
-import React, { useState } from 'react';
+const TimePassed = () => {
+  const [startDate, setStartDate] = useState('');
+  const [timePassed, setTimePassed] = useState('');
 
-const HOAI = () => {
-  // Define state variables using useState hook
-  const [count, setCount] = useState(0);
+  const calculateTimePassed = () => {
+    const startTime = new Date('07-01-1998');
+    const currentTime = new Date();
+    const difference = Math.abs(currentTime - startTime);
 
-  // Event handler to increment count
-  const incrementCount = () => {
-    setCount(count + 1);
+
+    const milisec = Math.floor((difference % 1000));
+    const seconds = Math.floor((difference / 1000) % 60);
+    const minutes = Math.floor((difference / (1000 * 60)) % 60);
+    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24) % 365.25);
+    const years = Math.floor(difference / (1000 * 60 * 60 * 24 * 365.25));
+
+    setTimePassed(`${years} years, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds, ${milisec} miliseconds`);
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(calculateTimePassed, 333);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [startDate]);
+
+  const handleInputChange = (e) => {
+    setStartDate(e.target.value);
+    setTimePassed('');
   };
 
   return (
     <div>
-      <h2>useState Example</h2>
-      <p>Count: {count}</p>
-      <button onClick={incrementCount}>Increment</button>
+      <h1 style={{color:'white'}}>How_Old_Am_I</h1>
+      {timePassed && <p>Time passed since {startDate}: {timePassed}</p>}
     </div>
   );
 };
 
-export default HOAI;
+export default TimePassed;
