@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Home = () => {
   // Example 1: Simple counter
@@ -25,9 +25,13 @@ const Home = () => {
     setRandomNumber(Math.random());
   };
 
+  useEffect(() => {
+    document.title = `You clicked ${count} times`;
+  }, [count]); // Only re-run the effect if count changes
+
   return (
     <div>
-      <h1>useState Examples</h1>
+      <h1>useState/useState Examples</h1>
 
       {/* Example 1: Simple counter */}
       <div>
