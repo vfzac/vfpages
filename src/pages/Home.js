@@ -31,7 +31,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>useState/useState Examples</h1>
+      <h1>useState/useEffect Examples</h1>
 
       {/* Example 1: Simple counter */}
       <div>
