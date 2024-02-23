@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import '../css/HOAI.css'; // Import your CSS file
+
 
 const TimePassed = () => {
   const [startDate, setStartDate] = useState('');
@@ -36,7 +38,7 @@ const TimePassed = () => {
   return (
     <div>
       <h1 style={{color:'white'}}>How_Old_Am_I</h1>
-      {timePassed && <p>Time passed since {startDate}: {timePassed}</p>}
+      {timePassed && <p>^{startDate} {timePassed}</p>}
     </div>
   );
 };
