@@ -30,10 +30,7 @@ const TimePassed = () => {
     };
   }, [startDate]);
 
-  const handleInputChange = (e) => {
-    setStartDate(e.target.value);
-    setTimePassed('');
-  };
+  
 
   return (
     <div>
