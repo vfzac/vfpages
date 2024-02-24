@@ -1,46 +1,14 @@
-/* styles.css */
-
-/* Common styles for all screen sizes */
+body {
+  background-color: black;
+}
 h1 {
-    color: blue;
+    color: #ffc400;
     font-size: 24px;
   }
   
   p {
-    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffc400;
     font-size: 70px;
-  }
-  
-  /* Styles for small devices (up to 576px) */
-  @media screen and (max-width: 576px) {
-    h1 {
-      font-size: 20px;
-    }
-  }
-  
-  /* Styles for tablets (between 576px and 992px) */
-  @media screen and (min-width: 577px) and (max-width: 992px) {
-    h1 {
-      font-size: 28px;
-    }
-  }
-  
-  /* Styles for desktop (greater than 992px) */
-  @media screen and (min-width: 993px) {
-    h1 {
-      font-size: 32px;
-    }
-  }
-  
-  /* Additional styles */
-  .small-device-message {
-    display: none;
-  }
-  
-  @media screen and (max-width: 576px) {
-    .small-device-message {
-      display: block;
-      color: red;
-    }
   }
   

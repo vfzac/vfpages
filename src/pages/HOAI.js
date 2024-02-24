@@ -37,8 +37,8 @@ const TimePassed = () => {
 
   return (
     <div>
-      <h1 style={{color:'white'}}>How_Old_Am_I</h1>
-      {timePassed && <p>^{startDate} {timePassed}</p>}
+      <h1>How_Old_Am_I</h1>
+      {timePassed && <p>^{startDate} ^ {timePassed}</p>}
     </div>
   );
 };
