@@ -1,8 +1,8 @@
 body {
-  background-color: black;
+  background-color: rgb(86, 68, 68);
 }
 .header-text {
-    color: #ffc400;
+    color: rgb(86, 68, 68);
     font-size: 24px;
   }
   
