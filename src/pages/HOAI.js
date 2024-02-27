@@ -56,6 +56,7 @@ const TimePassed = () => {
       {timePassed.split('').map((digit, index) => (
         <span key={index} className='nixie-tube-lights'>{digit}</span>
       ))}
+      <h1 className='header-text'>How_Old_Am_I</h1>
     </div>
   );
 };
