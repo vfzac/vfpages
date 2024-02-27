@@ -53,9 +53,11 @@ const TimePassed = () => {
   return (
     <div>
       <h1 className='header-text'>How_Old_Am_I</h1>
+      <span className='container'>
       {timePassed.split('').map((digit, index) => (
-        <span key={index} className='nixie-tube-lights'>{digit}</span>
+          <span key={index} className='nixie-tube-lights nixie-tube-glass'>{digit}</span>
       ))}
+      </span>
       <h1 className='header-text'>How_Old_Am_I</h1>
     </div>
   );

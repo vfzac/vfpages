@@ -1,14 +1,37 @@
-body {
+:root {
+  --light-blur: 0.6rem;
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
   background-image: url('../img/bg-post-it.jpg');
+  
 }
 .header-text {
     color: rgb(86, 68, 68);
     font-size: 24px;
   }
-  
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+}
+
 .nixie-tube-lights {
-  font-size: 10vh;
+  font-size: 7dvw ;
   font-family: 'Courier New', Courier, monospace;
   color: #ffc400;
-  text-shadow: 2px 2px 0.07em orange, -2px -2px 0.07em orange,  -3px 3px 0.06em orange,  3px -3px 0.06em orange;
+  /*text-shadow: 2px 2px 0.07em orange, -2px -2px 0.07em orange,  -3px 3px 0.06em orange,  3px -3px 0.06em orange;*/
+  text-shadow: orange 0 0 var(--light-blur), orange 0 0 var(--light-blur), orange 0 0 var(--light-blur), orange 0 0 var(--light-blur);
+  
+  border-radius: 10%;
+}
+
+.nixie-tube-glass {
+  background-color: rgba(196, 196, 196, 0.153);
 }
