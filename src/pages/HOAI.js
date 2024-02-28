@@ -6,7 +6,7 @@ import { differenceInMilliseconds, differenceInMonths } from 'date-fns';
 
 const TimePassed = () => {
   const [timePassed, setTimePassed] = useState('');
-
+  document.title = `HOAI`
   const calculateTimePassed = () => {
     const secondsInMs = 1000;
     const minutesInMs = secondsInMs * 60;
@@ -40,7 +40,7 @@ const TimePassed = () => {
   };
 
   useEffect(() => {
-    const intervalId = setInterval(calculateTimePassed, 333);
+    const intervalId = setInterval(calculateTimePassed, 200);
 
     return () => {
       clearInterval(intervalId);

@@ -1,12 +1,15 @@
 :root {
-  --light-blur: 0.6rem;
+  --light-blur: 1.5rem; /*blur value for the digits*/
 }
 
 
 body, html {
-  height: 100%;
+  height: 90%;
+  width: 100%;
   margin: 0;
+  background-color: rgb(255, 255, 255);
   background-image: url('../img/bg-post-it.jpg');
+  background-size: contain;
   
 }
 .header-text {
@@ -27,11 +30,13 @@ body, html {
   font-family: 'Courier New', Courier, monospace;
   color: #ffc400;
   /*text-shadow: 2px 2px 0.07em orange, -2px -2px 0.07em orange,  -3px 3px 0.06em orange,  3px -3px 0.06em orange;*/
-  text-shadow: orange 0 0 var(--light-blur), orange 0 0 var(--light-blur), orange 0 0 var(--light-blur), orange 0 0 var(--light-blur);
-  
-  border-radius: 10%;
+  text-shadow: orange 0 0 var(--light-blur), orange 0 0 var(--light-blur), orange 0 0 var(--light-blur);
+
+  border-radius: 15%;
 }
 
 .nixie-tube-glass {
-  background-color: rgba(196, 196, 196, 0.153);
+  margin-left: 2px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: inset rgba(128, 83, 0, 0.544) 0 0 var(--light-blur);
 }
