@@ -58,9 +58,8 @@ const TimePassed = () => {
           <span key={index} className='nixie-tube-lights nixie-tube-glass'>{digit}</span>
       ))}
       </span>
-      <h1 className='header-text'>How_Old_Am_I</h1>
     </div>
-  );
+  )
 };
 
 export default TimePassed;

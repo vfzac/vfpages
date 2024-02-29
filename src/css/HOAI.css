@@ -15,7 +15,8 @@ body, html {
 .fade-in {
   opacity: 0; /* Initially, set opacity to 0 to make the text invisible */
   animation: fadeInAnimation 0.7s ease-in forwards; /* Apply the animation */
-}@keyframes fadeInAnimation {
+}
+@keyframes fadeInAnimation {
   from {
       opacity: 0; /* Starting opacity */
   }
@@ -25,9 +26,14 @@ body, html {
 }
 
 .header-text {
-    color: rgb(86, 68, 68);
-    font-size: 24px;
-  }
+  font-family: 'Courier New', Courier, monospace;
+  color: coral;
+  opacity: 30%;
+  font-size: 4dvw;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
 
 .container {
   position: absolute;
@@ -51,7 +57,7 @@ body, html {
   margin-left: 2px;
   animation: fade 1s infinite alternate-reverse;
   background-color: rgba(255, 255, 255, 0);
-  box-shadow: inset rgba(128, 83, 0, 0.544) 0 0 1dvb;
+  box-shadow: inset rgba(128, 83, 0, 0.544) 0 0 2dvb;
 }
 
 @keyframes fade {
