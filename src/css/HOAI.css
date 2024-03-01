@@ -33,6 +33,7 @@ body, html {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 50%);
+  user-select: none;
 }
 
 .container {
@@ -41,6 +42,7 @@ body, html {
   left: 50%;
   transform: translate(-51%, -50%);
   padding: 10px 20px;
+  user-select: none;
 }
 
 .nixie-tube-lights {
@@ -49,7 +51,6 @@ body, html {
   color: #ffc400;
   /*text-shadow: 2px 2px 0.07em orange, -2px -2px 0.07em orange,  -3px 3px 0.06em orange,  3px -3px 0.06em orange;*/
   text-shadow: orange 0 0 var(--light-blur), orange 0 0 var(--light-blur), orange 0 0 var(--light-blur);
-  
   border-radius: 15%;
 }
 
