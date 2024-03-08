@@ -3,13 +3,13 @@
 }
 
 
-body, html {
-  height: 90%;
-  width: 100%;
+body{
   margin: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   background-image: url('../img/bg-post-it.jpg');
-  background-size: contain;
+  background-size: 50vh 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .fade-in {
@@ -58,7 +58,7 @@ body, html {
   margin-left: 2px;
   animation: fade 1s infinite alternate-reverse;
   background-color: rgba(255, 255, 255, 0);
-  box-shadow: inset rgba(128, 83, 0, 0.544) 0 0 2dvb;
+  box-shadow: inset rgba(128, 83, 0, 0.884) 0 0 2dvb;
 }
 
 @keyframes fade {

@@ -4,19 +4,20 @@ import { differenceInMilliseconds, differenceInMonths } from 'date-fns';
 
 
 
+document.title = `HOAI`
+const secondsInMs = 1000;
+const minutesInMs = secondsInMs * 60;
+const hoursInMs = minutesInMs * 60;
+const daysInMs = hoursInMs * 24;
+const monthsInMs = daysInMs * (365.25 / 12);
+const yearsInMs = daysInMs * 365.25;
+let startTime = new Date('1998-07-01T00:00:00');
+const currentTime = new Date();
+
 const TimePassed = () => {
   const [timePassed, setTimePassed] = useState('');
-  document.title = `HOAI`
   const calculateTimePassed = () => {
-    const secondsInMs = 1000;
-    const minutesInMs = secondsInMs * 60;
-    const hoursInMs = minutesInMs * 60;
-    const daysInMs = hoursInMs * 24;
-    const monthsInMs = daysInMs * (365.25 / 12);
-    const yearsInMs = daysInMs * 365.25;
 
-    let startTime = new Date('1998-07-01T00:00:00');
-    const currentTime = new Date();
     const differenceInMs = differenceInMilliseconds(currentTime, startTime); // Difference in milliseconds
     let tempdif = differenceInMs;
     const years = Math.floor(Math.abs(tempdif / yearsInMs));
