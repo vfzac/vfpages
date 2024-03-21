@@ -29,11 +29,10 @@ body{
 .header-text {
   font-family: 'Courier New', Courier, monospace;
   color: coral;
-  opacity: 30%;
+  opacity: 20%;
   font-size: 4dvw;
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(100%, 50%);
   user-select: none;
 }
 

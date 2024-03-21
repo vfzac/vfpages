@@ -39,7 +39,7 @@ const TimePassed = () => {
   };
 
   useEffect(() => {
-    const intervalId = setInterval(calculateTimePassed, 1000);
+    const intervalId = setInterval(calculateTimePassed, 500);
 
     return () => {
       clearInterval(intervalId);
@@ -50,7 +50,7 @@ const TimePassed = () => {
 
 
   return (
-    <div>
+    <div  className='fade-in'>
       {document.title = `HOAI`}
       <h1 className='header-text'>How_Old_Am_I</h1>
       <span className='container fade-in'>
