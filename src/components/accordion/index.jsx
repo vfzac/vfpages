@@ -32,11 +32,9 @@ export default function Accordion() {
     return (
         <div className='wrapper'>
             <button onClick={() => handleMultiButton()}>
-                [
-                <span style={{ visibility: enableMultiSelect ? 'visible' : 'hidden' }}>
+                [<span style={{ visibility: enableMultiSelect ? 'visible' : 'hidden' }}>
                     ✔
-                </span>
-                ] Enable Multi
+                </span>] Enable Multi
             </button>
             <div className='accordion'>
                 {
