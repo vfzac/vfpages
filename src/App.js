@@ -6,8 +6,9 @@ import './App.css';
 
 const App = () => {
   return (
-  <Accordion />
-  
+  <div>
+    <Accordion />
+  </div>
   );
 };
 // 
