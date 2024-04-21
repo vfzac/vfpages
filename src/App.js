@@ -1,12 +1,14 @@
 // App.js
 
 import React from 'react';
-import HOAI from './pages/HOAI';
-import Home from './pages/Home';
-import Layout from './pages/Layout';
+import Accordion from './components/accordion';
+import './App.css';
 
 const App = () => {
+  return (
+  <Accordion />
   
+  );
 };
 // 
 export default App;
