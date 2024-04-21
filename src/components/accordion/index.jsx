@@ -13,7 +13,7 @@ export default function Accordion() {
         setSelected(getCurrentId === selected ? null : getCurrentId);
     }
 
-    function handleMultiButton(){
+    function handleMultiButton() {
         setMultiple([]);
         setSelected(null);
         setenableMultiSelect(!enableMultiSelect)
@@ -31,7 +31,12 @@ export default function Accordion() {
 
     return (
         <div className='wrapper'>
-            <button onClick={() => handleMultiButton()}> Enable Multi</button>
+            <button onClick={() => handleMultiButton()}>
+                <span style={{ visibility: enableMultiSelect ? 'visible' : 'hidden' }}>
+                    ✔
+                </span>
+                Enable Multi
+            </button>
             <div className='accordion'>
                 {
                     data && data.length > 0 ?
