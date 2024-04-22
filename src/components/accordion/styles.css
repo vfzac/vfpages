@@ -6,7 +6,6 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    background-color: cadetblue;
 }
 
 .wrapper button {

@@ -51,7 +51,7 @@ const TimePassed = () => {
 
   return (
     <div  className='fade-in'>
-      {document.title = `HOAI`}
+      
       <h1 className='header-text'>How_Old_Am_I</h1>
       <span className='container fade-in'>
       {timePassed.split('').map((digit, index) => (
