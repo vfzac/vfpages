@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-//import '../css/HOAI.css'; // Import your CSS file
+import '../css/HOAI.css'; // Import your CSS file
 import { differenceInMilliseconds, differenceInMonths } from 'date-fns';
 
 
@@ -50,7 +50,7 @@ const TimePassed = () => {
 
 
   return (
-    <div  className='fade-in'>
+    <div  className='fade-in wrapper'>
       
       <h1 className='header-text'>How_Old_Am_I</h1>
       <span className='container fade-in'>
