@@ -7,3 +7,4 @@ adding to do list here.
   * make the tubes in blender duh
 * colors, specifically, add a color wheel to update the background gradient on the page itself
 * maybe some add some actually useful information about moi
+  * mainly interests, project(s)
